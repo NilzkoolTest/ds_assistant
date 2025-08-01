@@ -7,7 +7,6 @@ MADSA is a conversational app that allows users to perform data science tasks in
 - Generate plots by prompting in natural language e.g. *Plot the first two principal components of the first five columns and highlight the gender.*
 - Train machine learning models and/or explore model parameters e.g. *Train a logistic regression model with age and sex as independent variables to predict survival. Which parameter contributed the most?*
 
-
 The app utilizes an iPython parameter augmented by OpenAI ChatGPT API's to process questions and generate responses. Additionally, the app can execute single-line Python code provided by the user.
 
 **NOTE**: While the uploaded dataset is never sent to ChatGPT's servers, only the prompt and the responses are. 
@@ -19,7 +18,7 @@ The app utilizes an iPython parameter augmented by OpenAI ChatGPT API's to proce
 4. system_prompt.py: Defines the system prompt for the ChatGPT API.
 5. requirements.txt: Lists the required Python packages to run the app.
 6. test_datasets: A folder containing sample datasets to test the app.
-7. R&D: An old folder containing research and development code.
+7. r&D: An old folder containing research and development code.
 
 ## How to run the application
 #### Prerequisites
@@ -30,7 +29,7 @@ The app utilizes an iPython parameter augmented by OpenAI ChatGPT API's to proce
 
 1. Clone this repo
 ```bash
-git clone git@github.com:Nilzkool/ds_assistant.git
+git clone git@github.com:NilzkoolTest/ds_assistant.git
 cd ds_assistant
 ```
 2. Create a Conda environment and activate it
@@ -53,7 +52,7 @@ python -m streamlit run madsa_app.py
 ## Usage
 1. Upload a CSV file using the file uploader in the app.
 2. Enter your Python statement or ask a question in the text input field.
-Press Enter to submit your input. 
+   Press Enter to submit your input.
 3. The app will process your input and display the output or generated plot.
 
 ## Tips and tricks
