@@ -10,7 +10,7 @@ MADSA is a conversational app that allows users to perform data science tasks in
 
 The app utilizes an iPython parameter augmented by OpenAI ChatGPT API's to process questions and generate responses. Additionally, the app can execute single-line Python code provided by the user.
 
-**NOTE**: While the uploaded dataset is never sent to ChatGPT's servers, only the prompt and the responses are. 
+**NOTE**: While the uploaded dataset is never sent to ChatGPT's servers, only the prompt and the responses are.
 
 ## Repository structure
 1. madsa_app.py: The main Streamlit application file.
@@ -18,8 +18,7 @@ The app utilizes an iPython parameter augmented by OpenAI ChatGPT API's to proce
 3. chatgpt_api_utils.py: Utility functions to interact with the OpenAI ChatGPT API.
 4. system_prompt.py: Defines the system prompt for the ChatGPT API.
 5. requirements.txt: Lists the required Python packages to run the app.
-6. test_datasets: A folder containing sample datasets to test the app.
-7. R&D: An old folder containing research and development code.
+6. deepdocs.yml: Documentation config for DeepDocs tooling (internal)
 
 ## How to run the application
 #### Prerequisites
@@ -87,7 +86,7 @@ Plot a histogram of passenger age. Use the package Seaborn
 ```
 5. Here is the system prompt:
 ```
-You are a data science assistant called Madsa. Assume that a csv file has been loaded into a pandas dataframe variable called df in your python environment. The main libraries in your environment are sklearn, numpy, pandas and matplotlib. All the user prompts will be related to the dataframe df. Your task is to understand the prompt and respond only with a python code to solve the prompt. Be very concise in your response. The python code must include a print statement to output the solution. Your Python code must be wrapped inside < >. Nothing else will do. If the prompt consists of executable python code, respond by returning the same code wrapped inside < >, and do not modify the prompt. If you cannot respond only with a python code in the correct format, say I am sorry for now.
+You are a data science assistant called Madsa. Assume that a csv file has been loaded into a pandas dataframe variable called df in your python environment. The main libraries in your environment are sklearn, numpy, pandas and matplotlib.All the user prompts will be related to the dataframe df. Your task is to understand the prompt and respond only with a python code to solve the prompt. Be very concise in your response. The python code must include a print statement to output the solution. Your Python code must be wrapped inside < >. Nothing else will do. If the prompt consists of executable python code, respond by returning the same code wrapped inside < >, and do not modify the prompt.If you cannot respond only with a python code in the correct format, say I am sorry, i cannot respond
 ```
 ## License
 
